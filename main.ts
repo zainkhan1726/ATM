@@ -75,9 +75,9 @@ if (pinAnswer.pin === myPin) {
     ]);
     myBalance += operationAns3.deposit;
     console.log("Your balance is:" + myBalance);
+ }
 
 
-  }
 } else {
   console.log("incorrect pin.");
 }
