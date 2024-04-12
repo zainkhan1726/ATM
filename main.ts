@@ -16,7 +16,7 @@ let pinAns = await inquirer.prompt(
         { 
             name: "pin",
             type: "number",
-            message: "Enter pin code."
+            message: "Enter pin code"
         }
     ]
     )
@@ -41,7 +41,7 @@ let pinAns = await inquirer.prompt(
                         {
                             name: "withdraw",
                             type: "number",
-                            message: "Enter amount you want to withdraw."
+                            message: "Enter amount you want to withdraw"
                         }
                     ]
                     )
@@ -57,10 +57,11 @@ let pinAns = await inquirer.prompt(
                         {
                             name: "deposit",
                             type: "number",
-                            message: "Enter amount you want to deposit."
+                            message: "Enter amount you want to deposit"
                         }
                     ]
                     )
+                    console.log(chalk.green("Operation sucessfull!"));
                     myBalance += action2.deposit;
                     console.log(chalk.cyan("Now your balance is :" + myBalance));
                     
@@ -76,6 +77,7 @@ let pinAns = await inquirer.prompt(
                         }
                     ]
                     )
+                    console.log(chalk.green("Transaction sucessfull!"));
                     myBalance -= action3.fastCash;
                     console.log(chalk.cyan("Your remaining balance is :" + myBalance));
                     
