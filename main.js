@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
-let myBalance = 20000;
+let myBalance = 200000;
 const myPin = 1414;
 console.log(chalk.yellow("Current Balance :" + myBalance));
 console.log(chalk.yellow("pin is :" + myPin));
