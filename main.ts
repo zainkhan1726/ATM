@@ -3,12 +3,12 @@
 import inquirer from "inquirer";
 import chalk from "chalk";
 
-let myBalance = 200000;
+let myBalance = 20000;
 const myPin = 1414;
 
-console.log(chalk.yellow("Current Balance :" + myBalance));
+console.log(chalk.underline.yellow("\n\t\t\tCurrent Balance :" + myBalance));
 
-console.log(chalk.yellow("pin is :" + myPin));
+console.log(chalk.underline.yellow("\n\t\t\tpin is :" + myPin));
 
 
 let pinAns = await inquirer.prompt(
@@ -30,7 +30,7 @@ let pinAns = await inquirer.prompt(
                     name: "operation",
                     type: "list",
                     message: "Select one",
-                    choices: ["Withdraw","Deposit","Fast Cash","Check Balance"]
+                    choices: ["Withdraw","Deposit","Fast Cash","Check Balance","Quit"]
                 }
             ]
             )
@@ -86,7 +86,9 @@ let pinAns = await inquirer.prompt(
                 console.log(chalk.cyan("Your balance is :" + myBalance));
                 
             }
-            
+            else if (operationAns.operation === "Quit"){
+                console.log(chalk.greenBright.bold.italic("Thank you for using our services"));
+            }
             
     }
 
