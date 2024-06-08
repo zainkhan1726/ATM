@@ -30,9 +30,9 @@ This project is a Command-Line Interface (CLI) based ATM system developed using 
    npm install zain-1726-atm
    ```
 
-3. **Run the Application**:
+3. **Run the Application using npx command**:
    ```bash
-   node index.js
+   npx zain-1726-atm
    ```
 
 ## Usage
